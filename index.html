@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Setup DaisyUI and Tailwind -->
     <title>Design & Decor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Link: -->
+    <script src="https://kit.fontawesome.com/838a2fecb0.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Customize Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        text_light_gray: 'rgb(115, 115, 115)',
+                        clifford: '#da373d',
+                        bg_dark_green: 'rgb(171, 239, 95)',
+                        bg_light_green: 'rgba(171, 239, 95, 0.5)',
+                        bg_light_gray: 'rgb(244, 244, 244)',
+                        bg_dark: 'rgb(28, 28, 28);',
+
+                    },
+
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    },
+
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-Manrope">
+    <header class=" bg-gray-100">
+        <!-- Navbar Start Start-->
+        <nav class="container mx-auto py-2">
+            <div class="navbar">
+                <div class="navbar-start">
+                    
+                    <a href="#" class="text-2xl font-bold">
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-bg_dark_green p-2 rounded-full mr-0.5"></i>
+                        Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-semibold">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden sm:block">
+                        <a href="#"><i
+                                class="fa-solid fa-magnifying-glass text-2xl px-3 p-2 mr-2 bg-white rounded-full"></i></a>
+                        <a href="#"><i
+                                class="fa-solid fa-cart-shopping text-2xl p-2 px-3 mr-2 bg-white rounded-full"></i></a>
+                        <a class="btn bg-bg_dark_green rounded-3xl">Book Consult <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-bg_dark text-white p-2 rounded-full mr-0.5"></i></a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 right-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Start End-->
+
+        <section>
+            
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
